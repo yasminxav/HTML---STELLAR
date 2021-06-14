@@ -1,15 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 body {
-    background-image: linear-gradient(
-45deg, #e37682 15%, #5f4d93 85%);
+    background: linear-gradient(5deg, #e37682 15%, #5f4d93 85%)
+}
+#header {
+    text-align: center;
+    color:white;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+} 
+header.alt{
+    padding: 7em 5em 4em 5em;
+}
+header.alt h1{
+    font-size: 3.25em;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+    color:#FFFF
 }
 img.logo {
-    display: block;
-    margin: 0 auto;
     max-width: 75%;
-} 
-h1 {
-    font-size:1.25em;
-    font-family: Helvetica, sans-serif;
-    color:#FFFF
-
+}
+p, h1, h2, h3 {
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+}
+nav, ul.nav {
+    padding:1px;
+    color: #636363;
+    background-color: #f7f7f7;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    text-align: center;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+    
+}
+header {
+    
 }
