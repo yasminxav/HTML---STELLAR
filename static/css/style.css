@@ -1,27 +1,24 @@
+@import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 body {
-    background: linear-gradient(5deg, #e37682 15%, #5f4d93 85%)
+    background: linear-gradient(20deg, #e37682 15%, #5f4d93 85%)
+}
+@media screen and (max-width: 1280px) {
+    header#header.alt {
+    padding: 7em 5em 4em 5em;
+    }
 }
 #header {
     text-align: center;
+    display: block;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
     color:white;
-    font-family: "Source Sans Pro",Helvetica, sans-serif;
-} 
-header.alt{
-    padding: 7em 5em 4em 5em;
-}
-header.alt h1{
-    font-size: 3.25em;
-    font-family: "Source Sans Pro",Helvetica, sans-serif;
-    color:#FFFF
+
 }
 img.logo {
     max-width: 75%;
 }
-p, h1, h2, h3 {
-    font-family: "Source Sans Pro",Helvetica, sans-serif;
-}
-nav, ul.nav {
+ul.nav {
     padding:1px;
     color: #636363;
     background-color: #f7f7f7;
@@ -29,8 +26,217 @@ nav, ul.nav {
     border-top-right-radius: 0.25em;
     text-align: center;
     font-family: "Source Sans Pro",Helvetica, sans-serif;
+    display: block;
+    cursor: default;
     
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 0.7em 0;
+    letter-spacing: -0.025em;
+}
+#header.alt h1 {
+    font-size: 3.25em;
+    line-height: 1.2;
+}
+span.logo {
+    display: block;
+    margin: 0 0 1.5em 0;
+}
+#header p {
+    font-size: 1.25em;
+    letter-spacing: -0.025em;
+    transition-delay: 0.5s;
+    opacity: 0.7;
+    font-size: 25px;
+}
+p {
+    margin: 0 0 2em 0;
+    vertical-align: baseline;
+    font: inherit;
+    line-height: 1.5;
 }
 header {
+    padding: 96px 64px 48px;
+}
+section#first {
+    justify-content: center;
+    width: calc( 100%);
+    padding-left: 10px;
+    margin: 0 0 3em -3em;
+    background-color: white;
+
     
 }
+.nav {
+    list-style: none;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+}
+ul.nav li {
+display: inline-block;
+}
+ul.nav a {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 50px;       
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    background-color: white;
+    color: grey;
+}
+ul.features{
+    display: grid;
+    grid: 150px / auto auto auto;
+}
+li::marker{
+    color:white
+}
+ul.features i {
+    font-size: 70px;
+    margin: 0 0 90px 0;
+}
+ul.features a.buttom {
+    display: inline-block
+}
+
+/*Nav*/
+#header {
+    padding: 5em 5em 1em 5em ;
+    text-align: center;
+}
+
+    #header h1 {
+        margin: 0 0 0.25em 0;
+    }
+
+    #header p {
+        font-size: 1.25em;
+        letter-spacing: -0.025em;
+    }
+
+    #header.alt {
+        padding: 7em 5em 4em 5em ;
+    }
+
+        #header.alt h1 {
+            font-size: 3.25em;
+        }
+
+        #header.alt > * {
+            -moz-transition: opacity 3s ease;
+            -webkit-transition: opacity 3s ease;
+            -ms-transition: opacity 3s ease;
+            transition: opacity 3s ease;
+            -moz-transition-delay: 0.5s;
+            -webkit-transition-delay: 0.5s;
+            -ms-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+            opacity: 1;
+        }
+
+        #header.alt .logo {
+            -moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+            -webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+            -ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+            transition: opacity 1.25s ease, transform 0.5s ease;
+            -moz-transition-delay: 0s;
+            -webkit-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            transition-delay: 0s;
+            display: block;
+            margin: 0 0 1.5em 0;
+        }
+
+            #header.alt .logo img {
+                display: block;
+                margin: 0 auto;
+                max-width: 75%;
+            }
+
+    @media screen and (max-width: 1280px) {
+
+        #header {
+            padding: 4em 4em 0.1em 4em ;
+        }
+
+            #header.alt {
+                padding: 6em 4em 3em 4em ;
+            }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        #header {
+            padding: 4em 3em 0.1em 3em ;
+        }
+
+            #header.alt {
+                padding: 5em 3em 2em 3em ;
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #header {
+            padding: 3em 2em 0.1em 2em ;
+        }
+
+            #header p {
+                font-size: 1em;
+                letter-spacing: 0;
+            }
+
+                #header p br {
+                    display: none;
+                }
+
+            #header.alt {
+                padding: 4em 2em 1em 2em ;
+            }
+
+                #header.alt h1 {
+                    font-size: 2.5em;
+                }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        #header {
+            padding: 3em 1.5em 0.1em 1.5em ;
+        }
+
+            #header.alt {
+                padding: 4em 1.5em 1em 1.5em ;
+            }
+
+    }
+
+    @media screen and (max-width: 360px) {
+
+        #header {
+            padding: 2.5em 1em 0.1em 1em ;
+        }
+
+            #header.alt {
+                padding: 3.5em 1em 0.5em 1em ;
+            }
+
+    }
+
+    body.is-preload #header.alt > * {
+        opacity: 0;
+    }
+
+    body.is-preload #header.alt .logo {
+        -moz-transform: scale(0.8) rotate(-30deg);
+        -webkit-transform: scale(0.8) rotate(-30deg);
+        -ms-transform: scale(0.8) rotate(-30deg);
+        transform: scale(0.8) rotate(-30deg);
+    }
