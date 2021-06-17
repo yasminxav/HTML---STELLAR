@@ -1,13 +1,32 @@
-@import url(fontawesome-all.min.css);
+
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 body {
-    background: linear-gradient(20deg, #e37682 15%, #5f4d93 85%)
+    background: linear-gradient(25deg, #e37682 15%, #5f4d93 85%);
+    margin: 0;
 }
-@media screen and (max-width: 1280px) {
-    header#header.alt {
-    padding: 7em 5em 4em 5em;
-    }
+div {
+    display: block;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
 }
+#wrapper {
+    max-width: calc(100% - 4em);
+    margin: 0 auto;
+    vertical-align: baseline;
+    width: 64em;
+    vertical-align: center;
+}
+/*header*/
+header {
+    padding: 210px 20px 60px
+}
+
+header#header.alt {
+padding: 10em 9em 4em 5em;
+}
+
 #header {
     text-align: center;
     display: block;
@@ -33,210 +52,203 @@ ul.nav {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     line-height: 1.5;
-    margin: 0 0 0.7em 0;
+    margin: 0 0 0px 0;
     letter-spacing: -0.025em;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
 }
 #header.alt h1 {
-    font-size: 3.25em;
-    line-height: 1.2;
+    font-size: 4.6em;
+    line-height: 100px;
+    padding: 14px 15px 10px
 }
 span.logo {
     display: block;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 10px 0;
 }
 #header p {
-    font-size: 1.25em;
-    letter-spacing: -0.025em;
-    transition-delay: 0.5s;
+    font-size: 1.65em;
+    letter-spacing: -0.030em;
     opacity: 0.7;
-    font-size: 25px;
+    line-height: 50px;
+    font-weight: 300;
 }
 p {
     margin: 0 0 2em 0;
     vertical-align: baseline;
     font: inherit;
     line-height: 1.5;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+    font-weight: 300;
 }
-header {
-    padding: 96px 64px 48px;
+header a {
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: dotted 1px;
+    text-decoration: none;
+    color: inherit;
 }
-section#first {
-    justify-content: center;
-    width: calc( 100%);
-    padding-left: 10px;
-    margin: 0 0 3em -3em;
-    background-color: white;
 
-    
+
+
+/*Nav*/
+
+.nav {
+    -moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+    -webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+    -ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+    transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+    background-color: #ffffff;
+    color: #636363;
+    position: absolute;
+    width: 63.8em;
+    max-width: calc(100% - 4em);
+    background-color: #f7f7f7;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    cursor: default;
+    text-align: center;
 }
+
 .nav {
     list-style: none;
     font-size: 100%;
     font: inherit;
     vertical-align: middle;
+    padding: 30px
+}
+/*main*/
+    div.main {
+    padding: 5em 5em 3em 5em;
+    background-color: white
+    }
+    #nav + .main {
+        padding-top: 4.25em;
+    }
+/*Section Intro*/
+section#intro{
+    padding: 20px 20px 30px 20px
+}
+div.spotlight{
+    display: flex;
+    align-items: center;
+    margin: 0 0 2em 0;
+    background-color: #ffffff;
+    color: #636363;
+    border-radius: 0.25em;
+}
+div.content{
+    display: block;
+}
+.actions{
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+}
+.actions a{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    background-color: #ffffff;
+    border-color: #636363;
+    border-radius: 0.25em;
+    padding: 0px 28px 0px 28px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+.buttom{
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/*Section first*/
+section#first {
+    justify-content: center;
+    padding-left: 20px;
+    margin: 0 0 3em -3em;
+    background-color: white;
 }
 ul.nav li {
-display: inline-block;
+    display: inline-block;
 }
 ul.nav a {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-end: 50px;       
-    text-decoration: none;
     display: block;
-    padding: 5px 10px;
+    padding: 5px 5px ;
     background-color: white;
-    color: grey;
+    color:grey;
 }
-ul.features{
-    display: grid;
-    grid: 150px / auto auto auto;
+.features {
+    padding-left: 0;
+    text-align: center;
 }
-li::marker{
-    color:white
+
+.features li {
+    display: inline-block;
+    margin: 0 25px;
 }
 ul.features i {
     font-size: 70px;
     margin: 0 0 90px 0;
 }
 ul.features a.buttom {
-    display: inline-block
+    display: block;
 }
 
-/*Nav*/
-#header {
-    padding: 5em 5em 1em 5em ;
-    text-align: center;
+.title::after {
+    content: "";
+    width: 130px;
+    height: 2px;
+    display: block;
+    margin-top: 30px;
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 }
 
-    #header h1 {
-        margin: 0 0 0.25em 0;
-    }
+.features i {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 100%;
+}
 
-    #header p {
-        font-size: 1.25em;
-        letter-spacing: -0.025em;
-    }
+.features i::before {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 100%;
+    line-height: 200px;
+}
 
-    #header.alt {
-        padding: 7em 5em 4em 5em ;
-    }
 
-        #header.alt h1 {
-            font-size: 3.25em;
-        }
-
-        #header.alt > * {
-            -moz-transition: opacity 3s ease;
-            -webkit-transition: opacity 3s ease;
-            -ms-transition: opacity 3s ease;
-            transition: opacity 3s ease;
-            -moz-transition-delay: 0.5s;
-            -webkit-transition-delay: 0.5s;
-            -ms-transition-delay: 0.5s;
-            transition-delay: 0.5s;
-            opacity: 1;
-        }
-
-        #header.alt .logo {
-            -moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
-            -webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
-            -ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-            transition: opacity 1.25s ease, transform 0.5s ease;
-            -moz-transition-delay: 0s;
-            -webkit-transition-delay: 0s;
-            -ms-transition-delay: 0s;
-            transition-delay: 0s;
-            display: block;
-            margin: 0 0 1.5em 0;
-        }
-
-            #header.alt .logo img {
-                display: block;
-                margin: 0 auto;
-                max-width: 75%;
-            }
-
-    @media screen and (max-width: 1280px) {
-
-        #header {
-            padding: 4em 4em 0.1em 4em ;
-        }
-
-            #header.alt {
-                padding: 6em 4em 3em 4em ;
-            }
-
-    }
-
-    @media screen and (max-width: 980px) {
-
-        #header {
-            padding: 4em 3em 0.1em 3em ;
-        }
-
-            #header.alt {
-                padding: 5em 3em 2em 3em ;
-            }
-
-    }
-
-    @media screen and (max-width: 736px) {
-
-        #header {
-            padding: 3em 2em 0.1em 2em ;
-        }
-
-            #header p {
-                font-size: 1em;
-                letter-spacing: 0;
-            }
-
-                #header p br {
-                    display: none;
-                }
-
-            #header.alt {
-                padding: 4em 2em 1em 2em ;
-            }
-
-                #header.alt h1 {
-                    font-size: 2.5em;
-                }
-
-    }
-
-    @media screen and (max-width: 480px) {
-
-        #header {
-            padding: 3em 1.5em 0.1em 1.5em ;
-        }
-
-            #header.alt {
-                padding: 4em 1.5em 1em 1.5em ;
-            }
-
-    }
-
-    @media screen and (max-width: 360px) {
-
-        #header {
-            padding: 2.5em 1em 0.1em 1em ;
-        }
-
-            #header.alt {
-                padding: 3.5em 1em 0.5em 1em ;
-            }
-
-    }
-
-    body.is-preload #header.alt > * {
-        opacity: 0;
-    }
-
-    body.is-preload #header.alt .logo {
-        -moz-transform: scale(0.8) rotate(-30deg);
-        -webkit-transform: scale(0.8) rotate(-30deg);
-        -ms-transform: scale(0.8) rotate(-30deg);
-        transform: scale(0.8) rotate(-30deg);
-    }
