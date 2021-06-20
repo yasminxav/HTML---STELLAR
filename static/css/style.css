@@ -164,6 +164,7 @@ header a {
     }
     #nav + ul.main {
         padding-top: 4.25em;
+        border-radius: 0.25em;
     }
     div.main {
     background-color: #ffffff;
@@ -177,11 +178,13 @@ display: block;
 section#intro{
     margin: 0;
     padding: 130px 40px 50px 40px;
-    border: 0;
+    border-bottom: 1px rgb(212, 212, 212);
+    height: 40em;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
+
 #intro > .main {
     padding: 40px 45px 40px 45px;
 }
@@ -202,47 +205,34 @@ header.major h2 {
 } 
 div.content p {
     font-size: 23px;
+    margin-bottom: 70px;
     
 }
 
-.actions{
+ul.actions{
     display: flex;
     cursor: default;
     list-style: none;
     margin-left: -1em;
-    padding-left: 0;
 }
-.actions a{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    background-color: #ffffff;
-    border-color: #636363;
-    border-radius: 0.25em;
-    padding: 0px 28px 0px 28px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-    border-radius: 8px;
-    border: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 300;
-    height: 2.75em;
-    line-height: 2.75em;
-    min-width: 9.25em;
-    padding: 0 1.5em;
-    text-align: center;
+
+.button1{
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
     text-decoration: none;
-    white-space: nowrap;
-
+    color: #636363;
+    font-size: 23px;
+    font-weight: 300;
 }
-.buttom{
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-
+a.button1 {
+    background-color: transparent;
+    border-radius:  8px ;
+    border: 1px solid #aaaaaa; 
+    padding: 15px 50px 15px 50px;
+}
+.button1:hover {
+    background-color: #eeeeee;
+    transition-duration: 0.4s 
 }
 
 
